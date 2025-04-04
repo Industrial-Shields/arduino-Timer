@@ -61,7 +61,7 @@ if (TON.update(in) == HIGH) {
 OffDelayTimer TOF(1000);
 
 int in = digitalRead(I0_0);
-if (TOFF.update(in) == HIGH) {
+if (TOF.update(in) == HIGH) {
     // Enter here after I0.0 is LOW during 1000ms and until it becomes HIGH
 }
 ```
