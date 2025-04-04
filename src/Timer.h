@@ -38,12 +38,12 @@ class DelayTimer : public Timer {
 
 	public:
 		virtual int update(int in) {
-			int ret = B;
+			int ret = LOW;
 
 			if (in == A) {
 				if (_lastIn == A) {
 					if (millis() - _lastTime > _presetTime) {
-						ret = A;
+						ret = HIGH;
 					}
 				} else {
 					_lastTime = millis();
